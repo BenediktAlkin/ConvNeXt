@@ -1,3 +1,12 @@
+# Added support to load via torchhub
+
+```
+model = torch.hub.load("BenediktAlkin/ConvNeXt", "convnext_isotropic_small", pretrained=True)
+model = torch.hub.load("BenediktAlkin/ConvNeXt", "convnext_isotropic_base", pretrained=True)
+model = torch.hub.load("BenediktAlkin/ConvNeXt", "convnext_isotropic_large", pretrained=True)
+```
+
+
 # [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
 
 Official PyTorch implementation of **ConvNeXt**, from the following paper:
