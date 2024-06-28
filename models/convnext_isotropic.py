@@ -34,6 +34,7 @@ class ConvNeXtIsotropic(nn.Module):
                  layer_scale_init_value=0, head_init_scale=1.,
                  ):
         super().__init__()
+        self.dim = dim
 
         self.stem = nn.Conv2d(in_chans, dim, kernel_size=16, stride=16)
         dp_rates=[x.item() for x in torch.linspace(0, drop_path_rate, depth)] 
